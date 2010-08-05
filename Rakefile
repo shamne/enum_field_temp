@@ -4,13 +4,13 @@ require 'rake'
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
-    gem.name = "enum_field_temp"
-    gem.summary = %Q{enum_field}
+    gem.name = "enum_field"
+    gem.summary = %Q{Enables Active Record attributes to point to enum like objects, by saving in your database only an integer ID.}
     gem.description = %Q{TODO: longer description of your gem}
-    gem.email = "alexander.shamne@gmail.com"
+    gem.email = "sgalkin@grantaire.com.ar"
     gem.homepage = "http://github.com/shamne/enum_field_temp"
-    gem.authors = ["Alexander Shamne"]
-    gem.add_development_dependency "thoughtbot-shoulda"
+    gem.authors = ["Sebasti\303\241n Bernardo Galkin"]
+    # gem.add_development_dependency "thoughtbot-shoulda"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
 rescue LoadError
@@ -50,7 +50,7 @@ Rake::RDocTask.new do |rdoc|
   end
 
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "enum_field_temp #{version}"
+  rdoc.title = "enum_field #{version}"
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
